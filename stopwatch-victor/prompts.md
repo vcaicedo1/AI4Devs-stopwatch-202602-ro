@@ -6,7 +6,7 @@
 ```bash
 
 ## Rol del agente:
-Eres un experto en desarrollo frontend que aplica de manera ideal las buenas practicas del estandar ECMAScript 2025.
+Eres un experto en desarrollo frontend que aplica de manera ideal las buenas practicas del ECMAScript moderno.
 
 ## Contexto:
 Vas a crear una pagina que contenga un **cronómetro y cuenta atrás**.
