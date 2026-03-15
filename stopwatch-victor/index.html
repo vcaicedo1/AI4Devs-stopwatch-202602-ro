@@ -4,20 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cronómetro & Cuenta Atrás</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="app-wrapper">
-    <!-- Decorative background grid -->
-    <div class="bg-grid" aria-hidden="true"></div>
-
     <main class="card" role="main">
 
-      <!-- ── Mode Toggle ── -->
+      <!-- ── Selector de modo ── -->
       <div class="mode-toggle" role="tablist" aria-label="Seleccionar modo">
         <button
           id="btn-stopwatch"
@@ -51,11 +45,9 @@
           <span id="time-ss" class="seg">00</span>
           <span id="time-ms" class="milliseconds">000</span>
         </div>
-        <!-- Scanline overlay -->
-        <div class="scanlines" aria-hidden="true"></div>
       </section>
 
-      <!-- ── Countdown input (hidden in stopwatch mode) ── -->
+      <!-- ── Configuración de cuenta atrás (oculto en modo cronómetro) ── -->
       <section
         id="countdown-input"
         class="countdown-input hidden"
@@ -64,66 +56,40 @@
         <label class="input-label">Establecer tiempo inicial</label>
         <div class="time-inputs">
           <div class="time-field">
-            <input
-              type="number"
-              id="input-hh"
-              min="0"
-              max="99"
-              value="0"
-              aria-label="Horas"
-              placeholder="00"
-            />
+            <input type="number" id="input-hh" min="0" max="99" value="0" aria-label="Horas" placeholder="00" />
             <span class="field-label">HH</span>
           </div>
           <span class="input-colon">:</span>
           <div class="time-field">
-            <input
-              type="number"
-              id="input-mm"
-              min="0"
-              max="59"
-              value="1"
-              aria-label="Minutos"
-              placeholder="00"
-            />
+            <input type="number" id="input-mm" min="0" max="59" value="1" aria-label="Minutos" placeholder="00" />
             <span class="field-label">MM</span>
           </div>
           <span class="input-colon">:</span>
           <div class="time-field">
-            <input
-              type="number"
-              id="input-ss"
-              min="0"
-              max="59"
-              value="0"
-              aria-label="Segundos"
-              placeholder="00"
-            />
+            <input type="number" id="input-ss" min="0" max="59" value="0" aria-label="Segundos" placeholder="00" />
             <span class="field-label">SS</span>
           </div>
         </div>
-        <button id="btn-set" class="btn-set" aria-label="Fijar tiempo">
-          FIJAR TIEMPO
-        </button>
+        <button id="btn-set" class="btn-set" aria-label="Fijar tiempo">FIJAR TIEMPO</button>
       </section>
 
-      <!-- ── Controls ── -->
+      <!-- ── Controles ── -->
       <div class="controls" role="group" aria-label="Controles">
         <button id="btn-start" class="ctrl-btn btn-start" aria-label="Iniciar cronómetro">
-          <span class="btn-icon">▶</span>
-          <span class="btn-label">INICIAR</span>
+          <span class="btn-icon"></span>
+          <span class="btn-label">Start</span>
         </button>
-        <button id="btn-lap" class="ctrl-btn btn-lap" aria-label="Registrar vuelta">
-          <span class="btn-icon">◉</span>
-          <span class="btn-label">VUELTA</span>
+        <button id="btn-lap" class="ctrl-btn btn-lap" aria-label="Registrar vuelta" disabled>
+          <span class="btn-icon"></span>
+          <span class="btn-label">Vuelta</span>
         </button>
         <button id="btn-clear" class="ctrl-btn btn-clear" aria-label="Limpiar y reiniciar">
-          <span class="btn-icon">↺</span>
-          <span class="btn-label">LIMPIAR</span>
+          <span class="btn-icon"></span>
+          <span class="btn-label">Clear</span>
         </button>
       </div>
 
-      <!-- ── Lap list (only visible in stopwatch mode) ── -->
+      <!-- ── Lista de vueltas (solo en modo cronómetro) ── -->
       <section id="laps-section" class="laps-section" aria-label="Registro de vueltas">
         <ul id="lap-list" class="lap-list" aria-label="Lista de vueltas"></ul>
       </section>

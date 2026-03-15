@@ -37,3 +37,21 @@ Proporciona el código completo actualizado de:
 - Incluir comentarios explicativos en secciones clave
 - Mantener buenas prácticas de accesibilidad
 ```
+
+### Prompt 2
+```bash
+## Resultado: 
+La logica generada es correcta, sin embargo, necesito que el diseño sea idéntico a la imagen que te adjunto (stopwatch.png). El estilo actual es demasiado moderno y el ejercicio requiere fidelidad visual con la referencia.
+
+## Cambios necesarios:
+1. Usa los colores exactos: fondo del display azul muy pálido, botones verde y rojo sólidos.
+
+2. Aplica bordes negros gruesos y esquinas redondeadas (estilo flat/retro).
+
+3. El formato del tiempo debe ser grande y centrado, con los milisegundos pequeños en la esquina inferior derecha del recuadro, tal cual se ve en la imagen.
+
+4. Asegúrate de que los botones 'Start' y 'Clear' tengan esa estética simple y tipografía clara.
+
+## Nota adicional:
+Actualiza el styles.css y ajusta el index.html si es necesario para que la estructura coincida.
+```
